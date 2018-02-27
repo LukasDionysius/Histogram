@@ -7,11 +7,13 @@ public class HistogramDriver {
   public static void main(String[] args) {
     
     String number; // Necessary to read large number as string so we can pick off first 'char'
-    int firstNumber; // The important number/'char'
+    int firstNumber; // The single important number/'char'
     
     try{ // Try block
 
       // Histogram histo = new Histogram(???);
+      // ^^^ What is the max supposed to be?
+      
       File data = new File("/Users/lukasmichaels/Documents/Histogram/MLBSalaries");
       Scanner scan = new Scanner(data);
 
