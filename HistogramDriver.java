@@ -11,18 +11,21 @@ public class HistogramDriver {
     
     try{ // Try block
 
-      // Create histogram
-      // Read in data
+      // Histogram histo = new Histogram(???);
+      File data = new File("/Users/lukasmichaels/Documents/Histogram/MLBSalaries");
+      Scanner scan = new Scanner(data);
 
-      // BEGIN LOOP: Some loop that reads the number on the line
-      // Read off first character of the number
-      // Submit first character to histogram class
-      // END LOOP
+      while (scan.hasNext()){
+				number = scan.nextLine();
+				Scanner firstNumScanner = new Scanner(number);
+				firstNumber = Character.getNumericValue(number.charAt(0));
+				histo.submit(firstNumber);
+			}
 
-      // Print histogram
+      System.out.println(histo.toString());
     }
-    catch{ // If cant find file
-      // Error handler
+    catch(FileNotFoundException e){ // If cant find file
+      System.out.println("File missing");
     }
 
   }
