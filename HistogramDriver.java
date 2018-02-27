@@ -11,8 +11,7 @@ public class HistogramDriver {
     
     try{ // Try block
 
-      // Histogram histo = new Histogram(???);
-      // ^^^ What is the max supposed to be?
+      Histogram histo = new Histogram(9);
       
       File data = new File("/Users/lukasmichaels/Documents/Histogram/MLBSalaries");
       Scanner scan = new Scanner(data);
