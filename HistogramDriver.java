@@ -16,12 +16,11 @@ public class HistogramDriver {
       Scanner scan = new Scanner(data);
 
       while (scan.hasNext()){
-				number = scan.nextLine();
-				Scanner firstNumScanner = new Scanner(number);
-				firstNumber = Character.getNumericValue(number.charAt(0));
-				histo.submit(firstNumber);
-			}
-
+      	number = scan.nextLine();
+      	Scanner firstNumScanner = new Scanner(number);
+      	firstNumber = Character.getNumericValue(number.charAt(0));
+      	histo.submit(firstNumber);
+      }
       System.out.println(histo.toString());
     }
     catch(FileNotFoundException e){ // If cant find file
