@@ -6,7 +6,10 @@ import java.util.Scanner;
 public class HistogramDriver {
   public static void main(String[] args) {
     
-    try{ // Look for file
+    String number; // Necessary to read large number as string so we can pick off first 'char'
+		int firstNumber; // The important number/'char'
+    
+    try{ // Try block
 
       // Create histogram
       // Read in data
