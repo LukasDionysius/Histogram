@@ -19,8 +19,7 @@ We decided to use MLB salaries because it was more fun than some other data sour
    6: *******
    7: ******
    8: *****
-   9: ****
-  10: 
+   9: **** 
 
 ## Discuss Results
 ### Issues we ran into:
